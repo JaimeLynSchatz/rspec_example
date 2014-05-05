@@ -10,7 +10,7 @@ describe "Library object" do
       Book.new("Javascript Patterns", "Stoyan Stefanov", :development),
       Book.new("Responsive Web Design", "Ethan Marcotte", :design)
     ]
-    File.open "book.yml", "w" do |f|
+    File.open "books.yml", "w" do |f|
       f.write YAML::dump lib_obj
     end
   end
